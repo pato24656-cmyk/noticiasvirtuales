@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noticias Virtuales MX y del Mundo</title>
+
+<!-- Estilos -->
+<style>
+body {
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:#111;
+  color:white;
+}
+.breaking {
+  background:red;
+  padding:12px;
+  text-align:center;
+  font-weight:bold;
+  font-size:1.2em;
+  animation: blink 1.5s infinite;
+}
+@keyframes blink {
+  0%,50%,100% {opacity:1;}
+  25%,75% {opacity:0;}
+}
+header {
+  background:black;
+  padding:50px 20px;
+  text-align:center;
+}
+header h1 {
+  margin:0;
+  font-size:2em;
+}
+header p {
+  font-size:1em;
+  opacity:0.8;
+}
+nav {
+  background:#1a1a1a;
+  padding:15px;
+  text-align:center;
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+nav a {
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+nav a:hover {
+  color:red;
+}
+.container {
+  padding:30px;
+  max-width:1000px;
+  margin:auto;
+}
+.card {
+  background:#1c1c1c;
+  padding:20px;
+  margin-bottom:20px;
+  border-left:5px solid red;
+  border-radius:8px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+}
+.card img {
+  width:100%;
+  max-width:250px;
+  margin-right:20px;
+  border-radius:6px;
+}
+.card-content {
+  flex:1;
+}
+.card h2 {
+  margin-top:0;
+}
+footer {
+  background:black;
+  text-align:center;
+  padding:20px;
+  opacity:0.7;
+  margin-top:30px;
+}
+@media(max-width:700px){
+  .card {
+    flex-direction:column;
+    text-align:center;
+  }
+  .card img {margin:0 0 15px 0;}
+}
+</style>
+
+</head>
+<body>
+
+<!-- Breaking News -->
+<div class="breaking">
+🚨 ÚLTIMA HORA • BREAKING NEWS 🚨
+</div>
+
+<!-- Header -->
+<header>
+<h1>Noticias Virtuales MX y del Mundo</h1>
+<p>Actualidad, viral y entretenimiento en tiempo real</p>
+</header>
+
+<!-- Navigation -->
+<nav>
+<a href="#">Inicio</a>
+<a href="#">México</a>
+<a href="#">Mundo</a>
+<a href="#">Entretenimiento</a>
+<a href="#">Deportes</a>
+<a href="#">Tendencias</a>
+</nav>
+
+<!-- Contenedor principal -->
+<div class="container">
+
+<!-- Tarjeta noticia 1 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/545008/pexels-photo-545008.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250" alt="Noticia 1">
+<div class="card-content">
+<h2>🔥 Última Hora</h2>
+<p>Estados Unidos e Israel realizan acciones en Medio Oriente mientras el mundo observa atentamente. Noticias actualizadas al minuto.</p>
+</div>
+</div>
+
+<!-- Tarjeta noticia 2 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/267614/pexels-photo-267614.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250" alt="Entretenimiento">
+<div class="card-content">
+<h2>🎬 Entretenimiento</h2>
+<p>La reunión de “La Onda” en Los Ángeles emociona a fans 33 años después del estreno de Sangre por Sangre. Recordando clásicos del cine de barrio.</p>
+</div>
+</div>
+
+<!-- Tarjeta noticia 3 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/261949/pexels-photo-261949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250" alt="Mundo">
+<div class="card-content">
+<h2>🌎 Internacional</h2>
+<p>La FIFA monitorea la situación en Irán antes del Mundial 2026. Seguridad y logística serán clave para los partidos de fase de grupos.</p>
+</div>
+</div>
+
+<!-- Tarjeta noticia 4 -->
+<div class="card">
+<img src="https://images.pexels.com/photos/434413/pexels-photo-434413.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=250" alt="Viral">
+<div class="card-content">
+<h2>📱 Viral</h2>
+<p>Imágenes impactantes de eventos recientes circulan en redes sociales. Verificación de contenido y noticias falsas al descubierto.</p>
+</div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+© 2026 Noticias Virtuales MX y del Mundo
+</footer>
+
+</body>
+</html>
